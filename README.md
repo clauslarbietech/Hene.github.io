@@ -4,6 +4,13 @@ Static photography portfolio for GitHub Pages, inspired by [iamhene.com](https:/
 
 **Stack:** React + Vite (no backend required).
 
+## Cloud / agent handoff
+
+If a Cursor Cloud Agent (or any coding agent) is continuing this project, start with:
+
+- **[AGENTS.md](AGENTS.md)** — full operating brief, architecture, status, acceptance checks, copy-paste continue prompt
+- **[CLOUD_AGENT.md](CLOUD_AGENT.md)** — short bootstrap prompt for cloud agents
+
 ## Local development
 
 ```bash
