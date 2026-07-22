@@ -1,0 +1,115 @@
+{
+  "site": {
+    "brand": "Hene",
+    "tagline": "Photography that holds a moment still.",
+    "email": "imheneinfo@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/claus-larbie-0ab15460",
+    "domain": "iamhene.com"
+  },
+  "covers": [
+    {
+      "id": "beauty",
+      "title": "Beauty",
+      "slug": "beauty",
+      "image": "/static/images/f1696194632.jpg",
+      "subtitle": "Portrait & form"
+    },
+    {
+      "id": "mood-board",
+      "title": "Mood Board",
+      "slug": "mood-board",
+      "image": "/static/images/Screen_Shot_2022-08-29_at_8.10.06_PM.png",
+      "subtitle": "Texture & tone"
+    },
+    {
+      "id": "journey",
+      "title": "Journey",
+      "slug": "journey",
+      "image": "/static/images/IMG_0402.jpg",
+      "subtitle": "Stories in motion"
+    },
+    {
+      "id": "just-create",
+      "title": "Just Create",
+      "slug": "just-create",
+      "image": "/static/images/f1699746056.jpg",
+      "subtitle": "Experiments & play"
+    }
+  ],
+  "galleries": [
+    {
+      "slug": "beauty",
+      "title": "Beauty",
+      "description": "Close studies of light, skin, and presence.",
+      "images": [
+        "/static/images/f1696194632.jpg",
+        "/static/images/f1696211632.jpg",
+        "/static/images/f22668200.jpg",
+        "/static/images/Alanis_Color-5.jpg",
+        "/static/images/Alanis_Color-4.jpg",
+        "/static/images/hene.jpg"
+      ]
+    },
+    {
+      "slug": "mood-board",
+      "title": "Mood Board",
+      "description": "Color, atmosphere, and visual references.",
+      "images": [
+        "/static/images/Screen_Shot_2022-08-29_at_8.10.06_PM.png",
+        "/static/images/f1741099160_copy.jpg",
+        "/static/images/f1741500496.jpg",
+        "/static/images/f1745993864.jpg",
+        "/static/images/f68983696.jpg"
+      ]
+    },
+    {
+      "slug": "journey",
+      "title": "Journey",
+      "description": "Frames collected along the way.",
+      "images": [
+        "/static/images/IMG_0402.jpg",
+        "/static/images/lucy.jpg",
+        "/static/images/dan-2019-1-1.jpg",
+        "/static/images/dan-2019-0.jpg",
+        "/static/images/f1785598792.jpg",
+        "/static/images/f1805841288.jpg"
+      ]
+    },
+    {
+      "slug": "just-create",
+      "title": "Just Create",
+      "description": "Open experiments without a brief.",
+      "images": [
+        "/static/images/f1699746056.jpg",
+        "/static/images/hene.jpg",
+        "/static/images/2B2A1521.jpg",
+        "/static/images/IMG_0205.jpg",
+        "/static/images/f1741565576.jpg",
+        "/static/images/wifey_s_pics_-65.jpeg"
+      ]
+    },
+    {
+      "slug": "gallery",
+      "title": "Gallery",
+      "description": "Selected works across styles and seasons.",
+      "images": [
+        "/static/images/wifey_s_pics_-65.jpeg",
+        "/static/images/f1805841288.jpg",
+        "/static/images/f1696194632.jpg",
+        "/static/images/f1696211632.jpg",
+        "/static/images/f1741099160_copy.jpg",
+        "/static/images/f1741500496.jpg",
+        "/static/images/f22668200.jpg",
+        "/static/images/dan-2019-1-1.jpg",
+        "/static/images/dan-2019-0.jpg",
+        "/static/images/f1785598792.jpg",
+        "/static/images/f1745993864.jpg",
+        "/static/images/f68983696.jpg",
+        "/static/images/f1741565576.jpg",
+        "/static/images/2B2A1521.jpg",
+        "/static/images/IMG_0205.jpg",
+        "/static/images/Alanis_Color-4.jpg"
+      ]
+    }
+  ]
+}

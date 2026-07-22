@@ -1,0 +1,21 @@
+# Dependencies & build
+node_modules/
+frontend/dist/
+frontend/.vite/
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+.env.*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Scrape scratch files (source of truth is backend/data + static images)
+_scrape_*.html
+_json_*.json
+scraped_images.json
