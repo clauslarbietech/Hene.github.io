@@ -22,8 +22,8 @@ Ship and maintain **Hene**, a static photography portfolio for **GitHub Pages**.
 - Static Vite app under [`frontend/`](frontend/)
 - Site content: [`frontend/src/data/site.json`](frontend/src/data/site.json)
 - Images: [`frontend/public/images/`](frontend/public/images/) (~22 web-optimized assets)
-- Home: **4-cover grid** → Beauty / Mood Board / Journey / Just Create
-- Gallery pages + lightbox (keyboard + swipe)
+- Home: **fullscreen scroll-snap screens** (intro + one screen per series) → Beauty / Mood Board / Journey / Just Create
+- Gallery pages with cinematic reel layout + lightbox (keyboard + swipe)
 - Vite `base: "/HENE.com/"` for project Pages URL
 - SPA fallback: `npm run build` copies `dist/index.html` → `dist/404.html`
 - Deploy workflow: [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml)

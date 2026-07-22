@@ -1,11 +1,17 @@
 {
   "site": {
     "brand": "Hene",
-    "tagline": "Photography that holds a moment still.",
+    "name": "Claus Larbie",
+    "tagline": "A photography, UX, and portfolio practice — frames shaped with intention.",
     "email": "imheneinfo@gmail.com",
     "linkedin": "https://www.linkedin.com/in/claus-larbie-0ab15460",
     "domain": "iamhene.com"
   },
+  "nav": [
+    { "label": "Work", "to": "/" },
+    { "label": "Portfolio", "to": "/portfolio" },
+    { "label": "About", "to": "/about" }
+  ],
   "covers": [
     {
       "id": "beauty",
@@ -88,5 +94,108 @@
         "images/wifey_s_pics_-65.jpeg"
       ]
     }
-  ]
+  ],
+  "about": {
+    "title": "About Me",
+    "portrait": "images/about-portrait.jpeg",
+    "intro": "With over a decade of experience as a creative professional, I specialize in transforming brands and ideas into engaging visual experiences.",
+    "focus": [
+      {
+        "title": "Design consulting",
+        "body": "Crafting tailored design solutions that resonate with your brand's identity."
+      },
+      {
+        "title": "User experience",
+        "body": "Building dynamic, user-friendly websites and e-commerce platforms. Expert in user research, wireframing, prototyping, and usability testing — passionate about seamless journeys and sharper design processes."
+      },
+      {
+        "title": "Multimedia",
+        "body": "Creating captivating visual content that tells your story and strengthens your brand."
+      }
+    ],
+    "clients": "I have worked with small businesses, corporations, and non-profit organizations — delivering designs and solutions shaped to each client's needs.",
+    "personal": "When I'm not with clients, I dedicate time to personal projects — exploring new trends, experimenting with modern techniques, and keeping creativity sharp."
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Selected product, brand, and marketing work.",
+    "cards": [
+      {
+        "id": "ux",
+        "title": "Design and Develop",
+        "subtitle": "UX Designing",
+        "image": "images/portfolio-ux-imac.png",
+        "href": "https://pitch.com/v/hene-stpwr5",
+        "external": true
+      },
+      {
+        "id": "brand-kit",
+        "title": "Brand Kit",
+        "subtitle": "Identity packaging",
+        "image": "images/portfolio-brandkit-imac.png",
+        "href": "/brand-kit",
+        "external": false
+      },
+      {
+        "id": "dod",
+        "title": "DoD Marketing",
+        "subtitle": "Marketing slicks & infographics",
+        "image": "images/portfolio-dod.jpg",
+        "href": "/dod-marketing",
+        "external": false
+      }
+    ]
+  },
+  "brandKit": {
+    "title": "Brand Kit",
+    "subtitle": "Identity systems, packaging, apparel, logos, and press.",
+    "specs": [
+      "Letterhead — 8.5\" × 11\"",
+      "Business card — 3.5\" × 2\"",
+      "Business envelope — 4.125\" × 9.25\"",
+      "Postcard — 4\" × 6\" to 6\" × 11\"",
+      "Flat letter envelope — 9.75\" × 12.5\""
+    ],
+    "sections": [
+      {
+        "title": "ID package",
+        "images": ["images/brand-id-010.png", "images/brand-pkg-1.png", "images/brand-pkg-2.png"]
+      },
+      {
+        "title": "Packaging",
+        "images": ["images/brand-pkg-005.jpg", "images/brand-apparel-011.png", "images/brand-apparel-013.png"]
+      },
+      {
+        "title": "Apparel & logo",
+        "images": ["images/brand-logo-001.png", "images/brand-logo-049.jpg"]
+      },
+      {
+        "title": "Magazine press",
+        "images": ["images/brand-mag-077.png", "images/brand-mag-080.png", "images/brand-mag-079.png", "images/brand-mag-081.png"]
+      }
+    ]
+  },
+  "dodMarketing": {
+    "title": "DoD Marketing",
+    "subtitle": "Branding, slicks, posters, and identity work.",
+    "disclaimer": "All images shown are public release content and authorized for public dissemination by the U.S. Department of Defense (DoD) or relevant agencies.",
+    "sections": [
+      {
+        "title": "Branding",
+        "images": ["images/dod-brand-1.png", "images/dod-brand-2.png", "images/dod-brand-3.png", "images/dod-brand-4.png"]
+      },
+      {
+        "title": "Marketing slick designs",
+        "images": ["images/dod-slick-8562.jpg", "images/dod-slick-8582.jpg", "images/dod-slick-8563.jpg", "images/dod-slick-8564.jpg"]
+      },
+      {
+        "title": "Poster",
+        "images": ["images/dod-poster-1.png", "images/dod-poster-2.png"]
+      },
+      {
+        "title": "Logo",
+        "images": ["images/dod-logo-1.png"]
+      }
+    ]
+  }
 }

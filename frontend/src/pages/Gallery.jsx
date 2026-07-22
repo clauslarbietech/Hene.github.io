@@ -13,6 +13,7 @@ export default function Gallery({ site }) {
 
   useEffect(() => {
     setLightboxIndex(null);
+    window.scrollTo(0, 0);
   }, [slug]);
 
   if (!gallery) {
@@ -36,16 +37,16 @@ export default function Gallery({ site }) {
         <h1 className="page__title">{gallery.title}</h1>
         <p className="page__desc">{gallery.description}</p>
         <Link to="/" className="page__back">
-          All series
+          ← All work
         </Link>
       </header>
 
-      <div className="mosaic">
+      <div className="reel">
         {images.map((src, i) => (
           <button
             key={src + i}
             type="button"
-            className="mosaic__item"
+            className={`reel__frame reel__frame--${(i % 3) + 1}`}
             onClick={() => setLightboxIndex(i)}
             aria-label={`Open ${gallery.title} image ${i + 1}`}
           >

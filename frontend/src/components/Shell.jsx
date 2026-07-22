@@ -1,18 +1,25 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 
 export default function Shell({ site, children }) {
   const { brand, email, linkedin } = site.site;
+  const { pathname } = useLocation();
+  const isHome = pathname === "/" || pathname === "";
 
   return (
-    <div className="shell">
-      <header className="topbar">
+    <div className={`shell ${isHome ? "shell--flow" : ""}`}>
+      <header className={`topbar ${isHome ? "topbar--over" : ""}`}>
         <Link to="/" className="topbar__brand" aria-label={`${brand} home`}>
           {brand}
         </Link>
         <nav className="topbar__nav" aria-label="Primary">
-          {site.covers.map((c) => (
-            <NavLink key={c.slug} to={`/${c.slug}`}>
-              {c.title}
+          {(site.nav || []).map((item) => (
+            <NavLink
+              key={item.to}
+              to={item.to}
+              end={item.to === "/"}
+              className={({ isActive }) => (isActive ? "active" : undefined)}
+            >
+              {item.label}
             </NavLink>
           ))}
         </nav>
@@ -26,10 +33,12 @@ export default function Shell({ site, children }) {
         </div>
       </header>
       <main>{children}</main>
-      <footer className="footer">
-        <span>{brand}</span>
-        <a href={`mailto:${email}`}>{email}</a>
-      </footer>
+      {!isHome && (
+        <footer className="footer">
+          <span>{brand}</span>
+          <a href={`mailto:${email}`}>{email}</a>
+        </footer>
+      )}
     </div>
   );
 }
