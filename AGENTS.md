@@ -146,3 +146,13 @@ Do not reintroduce Flask. Do not edit unrelated plan files. Prefer small commits
 - Distinctive type (Syne + Cormorant already wired in `index.html`)
 - Motion: cover hover, page enter, lightbox transition
 - No card chrome in galleries; masonry/column mosaic is fine
+
+---
+
+## Cursor Cloud specific instructions
+
+- **App location:** all install/build/dev commands run in `frontend/` (lockfile is `package-lock.json`, so use npm). Standard commands are in `README.md` and `frontend/package.json`.
+- **Base path gotcha:** Vite `base` is `/HENE.com/`, so the dev server serves at `http://localhost:5173/HENE.com/`, **not** `http://localhost:5173/`. The bare root and any deep route/image requested outside `/HENE.com/` will 404 — always include the base prefix when curling or browsing (e.g. `/HENE.com/beauty`, `/HENE.com/images/<file>.jpg`).
+- **No lint or test scripts exist.** `frontend/package.json` only defines `dev`, `build`, and `preview`; there is no linter or test runner configured, so "run lint/tests" is a no-op for this repo.
+- **Build side effect:** `npm run build` runs Vite then `scripts/spa-fallback.mjs`, which copies `dist/index.html` → `dist/404.html` for SPA deep-link fallback on GitHub Pages. A build is only complete when `dist/404.html` is written.
+- **Purely static:** no backend/server, no env vars, and no secrets are needed to run or build locally.
