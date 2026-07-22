@@ -1,24 +1,33 @@
-import { useMemo, useState } from "react";
+import { useMemo, useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import Lightbox from "../components/Lightbox.jsx";
+import { asset } from "../asset.js";
 
-export default function Gallery({ site, slug: slugProp }) {
-  const { slug: slugParam } = useParams();
-  const slug = slugProp || slugParam;
+export default function Gallery({ site }) {
+  const { slug } = useParams();
   const gallery = useMemo(
     () => (site.galleries || []).find((g) => g.slug === slug),
     [site, slug]
   );
   const [lightboxIndex, setLightboxIndex] = useState(null);
 
+  useEffect(() => {
+    setLightboxIndex(null);
+  }, [slug]);
+
   if (!gallery) {
     return (
-      <section className="page">
-        <p>Series not found.</p>
-        <Link to="/">Back home</Link>
+      <section className="page page--missing">
+        <p className="page__eyebrow">404</p>
+        <h1 className="page__title">Series not found</h1>
+        <Link to="/" className="page__back">
+          Back home
+        </Link>
       </section>
     );
   }
+
+  const images = gallery.images.map((src) => asset(src));
 
   return (
     <section className="page gallery-page">
@@ -26,15 +35,19 @@ export default function Gallery({ site, slug: slugProp }) {
         <p className="page__eyebrow">Series</p>
         <h1 className="page__title">{gallery.title}</h1>
         <p className="page__desc">{gallery.description}</p>
+        <Link to="/" className="page__back">
+          All series
+        </Link>
       </header>
 
       <div className="mosaic">
-        {gallery.images.map((src, i) => (
+        {images.map((src, i) => (
           <button
             key={src + i}
             type="button"
-            className={`mosaic__item mosaic__item--${(i % 5) + 1}`}
+            className="mosaic__item"
             onClick={() => setLightboxIndex(i)}
+            aria-label={`Open ${gallery.title} image ${i + 1}`}
           >
             <img src={src} alt={`${gallery.title} ${i + 1}`} loading="lazy" />
           </button>
@@ -43,7 +56,7 @@ export default function Gallery({ site, slug: slugProp }) {
 
       {lightboxIndex !== null && (
         <Lightbox
-          images={gallery.images}
+          images={images}
           index={lightboxIndex}
           onClose={() => setLightboxIndex(null)}
           onChange={setLightboxIndex}

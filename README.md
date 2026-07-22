@@ -1,38 +1,43 @@
 # Hene
 
-High-end photography portfolio inspired by [iamhene.com](https://www.iamhene.com/).
+Static photography portfolio for GitHub Pages, inspired by [iamhene.com](https://www.iamhene.com/).
 
-**Stack:** Flask API + React (Vite) frontend.
+**Stack:** React + Vite (no backend required).
 
-## Quick start
+## Local development
 
 ```bash
-# Backend
-cd backend
-python -m pip install -r requirements.txt
-python app.py
-
-# Frontend (new terminal)
 cd frontend
 npm install
 npm run dev
 ```
 
-Open http://localhost:5173 — Vite proxies `/api` and `/static` to Flask on port 5000.
+Open the URL Vite prints (usually http://localhost:5173/HENE.com/).
 
 ## Production build
 
 ```bash
-cd frontend && npm run build
-cd ../backend && python app.py
+cd frontend
+npm run build
+npm run preview
 ```
 
-Flask serves the built SPA from `frontend/dist` plus `/api` and `/static`.
+Output is in `frontend/dist` (includes `404.html` SPA fallback for client routes).
+
+## GitHub Pages
+
+1. Push this repo to GitHub as **`HENE.com`** on branch **`main`**.
+2. Repo **Settings → Pages → Build and deployment → Source: GitHub Actions**.
+3. The workflow [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml) builds and deploys on every push to `main`.
+
+Site URL: `https://<your-username>.github.io/HENE.com/`
+
+Vite `base` is set to `/HENE.com/` in [`frontend/vite.config.js`](frontend/vite.config.js). If you later attach a custom domain at the site root, change `base` to `/`.
 
 ## Content
 
-- Site structure: `backend/data/site.json`
-- Photo manifest: `backend/data/photos.json`
-- Images: `backend/static/images/`
+- Site structure: [`frontend/src/data/site.json`](frontend/src/data/site.json)
+- Images: [`frontend/public/images/`](frontend/public/images/)
+- Optional scrape helpers: [`scripts/`](scripts/)
 
 Contact: [imheneinfo@gmail.com](mailto:imheneinfo@gmail.com) · [LinkedIn](https://www.linkedin.com/in/claus-larbie-0ab15460)

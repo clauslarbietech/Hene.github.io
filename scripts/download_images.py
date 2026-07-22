@@ -1,4 +1,4 @@
-"""Download all discovered Squarespace images into backend/static/images."""
+"""Download all discovered Squarespace images into frontend/public/images."""
 import json
 import re
 import urllib.parse
@@ -6,7 +6,7 @@ import urllib.request
 from pathlib import Path
 
 base = Path(__file__).resolve().parent.parent
-out_dir = base / "backend" / "static" / "images"
+out_dir = base / "frontend" / "public" / "images"
 out_dir.mkdir(parents=True, exist_ok=True)
 
 UA = "Mozilla/5.0 (compatible; HenePortfolioBot/1.0)"
@@ -98,7 +98,7 @@ for i, im in enumerate(unique):
         {
             "id": f"img-{i+1}",
             "title": urllib.parse.unquote(im.get("title") or name),
-            "src": f"/static/{local}" if local.startswith("images/") else local,
+            "src": local if local.startswith("images/") else local,
             "remote": im["url"] + "?format=2500w",
             "fullUrl": im.get("fullUrl") or "",
             "tags": im.get("tags") or [],
@@ -106,7 +106,7 @@ for i, im in enumerate(unique):
         }
     )
 
-manifest_path = base / "backend" / "data" / "photos.json"
+manifest_path = base / "frontend" / "src" / "data" / "photos.json"
 manifest_path.parent.mkdir(parents=True, exist_ok=True)
 manifest_path.write_text(json.dumps(manifest, indent=2), encoding="utf-8")
 print(f"Wrote {len(manifest)} entries to {manifest_path}")

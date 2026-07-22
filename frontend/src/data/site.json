@@ -1,0 +1,92 @@
+{
+  "site": {
+    "brand": "Hene",
+    "tagline": "Photography that holds a moment still.",
+    "email": "imheneinfo@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/claus-larbie-0ab15460",
+    "domain": "iamhene.com"
+  },
+  "covers": [
+    {
+      "id": "beauty",
+      "title": "Beauty",
+      "slug": "beauty",
+      "image": "images/f1696194632.jpg",
+      "subtitle": "Portrait & form"
+    },
+    {
+      "id": "mood-board",
+      "title": "Mood Board",
+      "slug": "mood-board",
+      "image": "images/Screen_Shot_2022-08-29_at_8.10.06_PM.png",
+      "subtitle": "Texture & tone"
+    },
+    {
+      "id": "journey",
+      "title": "Journey",
+      "slug": "journey",
+      "image": "images/IMG_0402.jpg",
+      "subtitle": "Stories in motion"
+    },
+    {
+      "id": "just-create",
+      "title": "Just Create",
+      "slug": "just-create",
+      "image": "images/f1699746056.jpg",
+      "subtitle": "Experiments & play"
+    }
+  ],
+  "galleries": [
+    {
+      "slug": "beauty",
+      "title": "Beauty",
+      "description": "Close studies of light, skin, and presence.",
+      "images": [
+        "images/f1696194632.jpg",
+        "images/f1696211632.jpg",
+        "images/f22668200.jpg",
+        "images/Alanis_Color-5.jpg",
+        "images/Alanis_Color-4.jpg",
+        "images/hene.jpg"
+      ]
+    },
+    {
+      "slug": "mood-board",
+      "title": "Mood Board",
+      "description": "Color, atmosphere, and visual references.",
+      "images": [
+        "images/Screen_Shot_2022-08-29_at_8.10.06_PM.png",
+        "images/f1741099160_copy.jpg",
+        "images/f1741500496.jpg",
+        "images/f1745993864.jpg",
+        "images/f68983696.jpg"
+      ]
+    },
+    {
+      "slug": "journey",
+      "title": "Journey",
+      "description": "Frames collected along the way.",
+      "images": [
+        "images/IMG_0402.jpg",
+        "images/lucy.jpg",
+        "images/dan-2019-1-1.jpg",
+        "images/dan-2019-0.jpg",
+        "images/f1785598792.jpg",
+        "images/f1805841288.jpg"
+      ]
+    },
+    {
+      "slug": "just-create",
+      "title": "Just Create",
+      "description": "Open experiments without a brief.",
+      "images": [
+        "images/f1699746056.jpg",
+        "images/hene.jpg",
+        "images/2B2A1521.jpg",
+        "images/IMG_0205.jpg",
+        "images/f1741565576.jpg",
+        "images/wifey_s_pics_-65.jpeg"
+      ]
+    }
+  ]
+}

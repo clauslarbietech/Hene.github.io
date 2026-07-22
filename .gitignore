@@ -15,7 +15,7 @@ Thumbs.db
 .idea/
 .vscode/
 
-# Scrape scratch files (source of truth is backend/data + static images)
+# Scrape scratch files
 _scrape_*.html
 _json_*.json
 scraped_images.json

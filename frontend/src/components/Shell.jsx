@@ -10,7 +10,6 @@ export default function Shell({ site, children }) {
           {brand}
         </Link>
         <nav className="topbar__nav" aria-label="Primary">
-          <NavLink to="/gallery">Gallery</NavLink>
           {site.covers.map((c) => (
             <NavLink key={c.slug} to={`/${c.slug}`}>
               {c.title}
