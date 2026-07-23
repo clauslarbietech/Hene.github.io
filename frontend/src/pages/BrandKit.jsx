@@ -12,7 +12,7 @@ export default function BrandKit({ site }) {
   };
 
   return (
-    <section className="page project-page">
+    <section className="page project-page brand-kit-page">
       <header className="page__header">
         <p className="page__eyebrow">Portfolio</p>
         <h1 className="page__title">{data.title}</h1>

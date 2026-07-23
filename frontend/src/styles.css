@@ -429,6 +429,22 @@ img {
   outline-offset: 3px;
 }
 
+/* Brand Kit — present assets on clean white cards */
+.brand-kit-page .reel__frame {
+  background: #ffffff;
+  padding: clamp(0.75rem, 1.6vw, 1.5rem);
+}
+
+.brand-kit-page .reel__frame img {
+  filter: none;
+  object-fit: contain;
+}
+
+.brand-kit-page .reel__frame:hover img,
+.brand-kit-page .reel__frame:focus-visible img {
+  filter: none;
+}
+
 /* —— About —— */
 .about {
   display: grid;
