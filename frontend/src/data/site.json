@@ -3,15 +3,22 @@
     "brand": "Hene",
     "name": "Claus Larbie",
     "tagline": "A photography, UX, and portfolio practice — frames shaped with intention.",
-    "email": "imheneinfo@gmail.com",
+    "email": "clauslarbiedesign@gmail.com",
     "linkedin": "https://www.linkedin.com/in/claus-larbie-0ab15460",
     "domain": "iamhene.com"
   },
   "nav": [
     { "label": "Work", "to": "/" },
     { "label": "Portfolio", "to": "/portfolio" },
-    { "label": "About", "to": "/about" }
+    { "label": "Gallery", "to": "/gallery" },
+    { "label": "About", "to": "/about" },
+    { "label": "Contact", "to": "/contact" }
   ],
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Tell me about your project — I usually reply within a day or two.",
+    "endpoint": "https://formsubmit.co/ajax/clauslarbiedesign@gmail.com"
+  },
   "covers": [
     {
       "id": "beauty",
