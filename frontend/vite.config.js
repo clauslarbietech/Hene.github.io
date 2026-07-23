@@ -1,9 +1,9 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-// GitHub Pages project site: https://<user>.github.io/HENE.com/
+// GitHub Pages user site (repo named <user>.github.io): served at root https://<user>.github.io/
 export default defineConfig({
-  base: "/HENE.com/",
+  base: "/",
   plugins: [react()],
   server: {
     port: 5173,
