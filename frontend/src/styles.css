@@ -520,6 +520,101 @@ img {
   opacity: 1;
 }
 
+/* —— Contact form —— */
+.contact-form {
+  display: grid;
+  gap: 1.4rem;
+  max-width: 40rem;
+  animation: rise 0.9s var(--ease) 0.06s both;
+}
+
+.contact-field {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.contact-field > span {
+  font-family: var(--font-display);
+  font-size: 0.66rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--fog);
+}
+
+.contact-field input,
+.contact-field textarea {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  background: var(--ink-soft);
+  border: 1px solid var(--line);
+  color: var(--ivory);
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  transition: border-color 0.25s var(--ease);
+}
+
+.contact-field textarea {
+  resize: vertical;
+}
+
+.contact-field input:focus,
+.contact-field textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.contact-honey {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.contact-form .screen__cta {
+  justify-self: start;
+  cursor: pointer;
+  background: transparent;
+  color: var(--ivory);
+}
+
+.contact-form .screen__cta:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+
+.contact-error {
+  margin: 0;
+  color: #e6a5a5;
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+}
+
+.contact-success {
+  max-width: 40rem;
+  animation: rise 0.9s var(--ease) both;
+}
+
+.contact-success h2 {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: clamp(1.5rem, 3vw, 2.1rem);
+  margin: 0 0 0.6rem;
+}
+
+.contact-success p {
+  color: var(--fog);
+  margin: 0 0 1.6rem;
+}
+
+.contact-success .screen__cta {
+  cursor: pointer;
+  background: transparent;
+  color: var(--ivory);
+}
+
 /* —— Portfolio cards —— */
 .work-cards {
   display: grid;
