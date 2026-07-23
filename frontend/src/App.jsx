@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import Gallery from "./pages/Gallery.jsx";
+import GalleryAll from "./pages/GalleryAll.jsx";
 import About from "./pages/About.jsx";
 import Portfolio from "./pages/Portfolio.jsx";
 import BrandKit from "./pages/BrandKit.jsx";
@@ -13,6 +14,7 @@ export default function App() {
     <Shell site={site}>
       <Routes>
         <Route path="/" element={<Home site={site} />} />
+        <Route path="/gallery" element={<GalleryAll site={site} />} />
         <Route path="/about" element={<About site={site} />} />
         <Route path="/portfolio" element={<Portfolio site={site} />} />
         <Route path="/brand-kit" element={<BrandKit site={site} />} />

@@ -10,6 +10,7 @@
   "nav": [
     { "label": "Work", "to": "/" },
     { "label": "Portfolio", "to": "/portfolio" },
+    { "label": "Gallery", "to": "/gallery" },
     { "label": "About", "to": "/about" }
   ],
   "covers": [
